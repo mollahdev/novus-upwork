@@ -1,0 +1,27 @@
+// components color
+$project_colors: (
+    'header_bg_color'   : #0D1C32,
+    'primary_color'     : #60FEEB,
+    'tertiary_color'    : #6FDA44,
+    'secondary_color'   : #F2F2F2,
+    'white_color'       : #ffffff,
+    'body_bg_color'     : linear-gradient(178.53deg, #102741 1.25%, #184C6C 98.7%)
+);
+
+//font family
+$primary_font: 'Gilroy';
+$secondary_font: 'Inter', sans-serif;
+
+// image source directory variable
+$project_image_source_dir: './../images';
+$project_font_source_dir: './../fonts';
+
+// responsive breakpoints
+$small_mobile   : 400px;
+$mobile         : 575px;
+$tablet         : 768px;
+$large_tablet   : 850px;
+$laptop         : 991px;
+$default_width  : 1080px;
+$small_desktop  : 1199px;
+$desktop        : 1600px;

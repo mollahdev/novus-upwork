@@ -1,0 +1,60 @@
+.ripple_effect{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 4px;
+
+    .ripple_button__text {
+        position: relative;
+        z-index: 1;
+        transition: .1s ease-in;
+        font-family: $secondary_font;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+
+    &__shape{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+    }
+
+    &__active{ 
+        transition: width .3s ease-in, padding-bottom .3s ease-in;
+        width: 200%;
+        padding-bottom: 200%;
+        
+    }
+}
+
+// Style 1 
+.style-1 {
+    .ripple_effect {
+        background-color: css_var('tertiary_color');
+        .ripple_button__text {
+            color: css_var('header_bg_color');
+        }
+        &__shape {
+            background-color: css_var('white_color');
+        }
+    }
+}
+
+// Style 2
+.style-2 {
+    .ripple_effect {
+        background-color: css_var('primary_color');
+        .ripple_button__text {
+            color: css_var('header_bg_color');
+        }
+        &__shape {
+            background-color: css_var('white_color');
+        }
+    }
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: light;
+    src: url("#{$project_font_source_dir}/Gilroy-Light.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: regular;
+    src: url("#{$project_font_source_dir}/Gilroy-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: medium;
+    src: url("#{$project_font_source_dir}/Gilroy-Medium.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: semi_bold;
+    src: url("#{$project_font_source_dir}/Gilroy-SemiBold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: bold;
+    src: url("#{$project_font_source_dir}/Gilroy-Bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: heavy;
+    src: url("#{$project_font_source_dir}/Gilroy-Heavy.ttf") format("opentype");
+}
+
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: extra_bold;
+    src: url("#{$project_font_source_dir}/Gilroy-ExtraBold.ttf") format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $secondary_font;
+    font-size: 16px;
+    background: css_var('body_bg_color');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+h2 {
+    font-family: $primary_font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+p, span, label {
+    font-family: $secondary_font;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+a, ul, ol, dl {
+    list-style-type: none;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+a, button, span, label, i, input, textarea {
+    display: inline-block;
+}
+
+a, button {
+    transition: all linear .2s;
+}

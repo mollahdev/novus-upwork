@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+	--header_bg_color: #0D1C32;
+	--primary_color: #60FEEB;
+	--tertiary_color: #6FDA44;
+	--secondary_color: #F2F2F2;
+	--white_color: #ffffff;
+	--body_bg_color: linear-gradient(178.53deg, #102741 1.25%, #184C6C 98.7%);
+}
+
+@font-face {
+	font-family: Gilroy;
+	font-weight: light;
+	src: url("./../fonts/Gilroy-Light.ttf") format("opentype");
+}
+
+@font-face {
+	font-family: Gilroy;
+	font-weight: regular;
+	src: url("./../fonts/Gilroy-Regular.ttf") format("opentype");
+}
+
+@font-face {
+	font-family: Gilroy;
+	font-weight: medium;
+	src: url("./../fonts/Gilroy-Medium.ttf") format("opentype");
+}
+
+@font-face {
+	font-family: Gilroy;
+	font-weight: semi_bold;
+	src: url("./../fonts/Gilroy-SemiBold.ttf") format("opentype");
+}
+
+@font-face {
+	font-family: Gilroy;
+	font-weight: bold;
+	src: url("./../fonts/Gilroy-Bold.ttf") format("opentype");
+}
+
+@font-face {
+	font-family: Gilroy;
+	font-weight: heavy;
+	src: url("./../fonts/Gilroy-Heavy.ttf") format("opentype");
+}
+
+@font-face {
+	font-family: Gilroy;
+	font-weight: extra_bold;
+	src: url("./../fonts/Gilroy-ExtraBold.ttf") format("opentype");
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	background: var(--body_bg_color);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+h2 {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+}
+
+p,
+span,
+label {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+a,
+ul,
+ol,
+dl {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+a:hover,
+ul:hover,
+ol:hover,
+dl:hover {
+	text-decoration: none;
+}
+
+a,
+button,
+span,
+label,
+i,
+input,
+textarea {
+	display: inline-block;
+}
+
+a,
+button {
+	transition: all linear .2s;
+}
+
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.ripple_effect {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	padding: 10px 22px;
+	border-radius: 4px;
+}
+
+.ripple_effect .ripple_button__text {
+	position: relative;
+	z-index: 1;
+	transition: .1s ease-in;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.ripple_effect__shape {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+}
+
+.ripple_effect__active {
+	transition: width .3s ease-in, padding-bottom .3s ease-in;
+	width: 200%;
+	padding-bottom: 200%;
+}
+
+.style-1 .ripple_effect {
+	background-color: var(--tertiary_color);
+}
+
+.style-1 .ripple_effect .ripple_button__text {
+	color: var(--header_bg_color);
+}
+
+.style-1 .ripple_effect__shape {
+	background-color: var(--white_color);
+}
+
+.style-2 .ripple_effect {
+	background-color: var(--primary_color);
+}
+
+.style-2 .ripple_effect .ripple_button__text {
+	color: var(--header_bg_color);
+}
+
+.style-2 .ripple_effect__shape {
+	background-color: var(--white_color);
+}
+
+.navbar-section {
+	background: var(--header_bg_color);
+	padding: 18px 0;
+}
+
+.navbar-section .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.navbar-section .navbar__menu__list {
+	display: flex;
+	column-gap: 30px;
+	row-gap: 20px;
+}
+
+.navbar-section .navbar__menu__list--link {
+	color: var(--white_color);
+	font-weight: 600;
+}
+
+.navbar-section .navbar__menu__list--link:hover,
+.navbar-section .navbar__menu__list--link.active {
+	color: var(--tertiary_color);
+}
+

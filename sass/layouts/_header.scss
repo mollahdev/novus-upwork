@@ -1,0 +1,31 @@
+.navbar-section {
+    background: css_var('header_bg_color');
+    padding: 18px 0;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        &__menu {
+            &__list {
+                display: flex;
+                column-gap: 30px;
+                row-gap: 20px;
+                
+                &--link {
+                    color: css_var('white_color');
+                    font-weight: 600;
+
+                    &:hover,
+                    &.active {
+                        color: css_var('tertiary_color');
+                    }
+                }
+                
+            }
+        }
+    }
+}
