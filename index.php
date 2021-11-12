@@ -37,6 +37,7 @@
     include './solution.php';
     include './portfolio.php';
     include './endorsement.php';
+    include './team.php';
 
     /**
      * 

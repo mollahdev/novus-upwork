@@ -89,16 +89,23 @@
             const swiper = new Swiper( swiperSlider, {
                 // Optional parameters
                 loop: true,
+                slidesPerView: 3,
+                spaceBetween: 25,
+
+                autoplay: {
+                    delay: 3000,
+                },
               
                 // If we need pagination
                 pagination: {
                   el: swiperPagination,
+                  clickable: true
                 },
               
                 // Navigation arrows
                 navigation: {
-                  nextEl: swiperBtnPrev,
-                  prevEl: swiperBtnNext,
+                  nextEl: swiperBtnNext,
+                  prevEl: swiperBtnPrev,
                 },
               
               });
@@ -140,6 +147,18 @@
          */ 
 
         $.fn.endorsmentSlider($('.endorsement-section'));
+
+        /***
+         * 
+         * Popup video 
+         * 
+         */ 
+         $('.open-popup-link').magnificPopup({
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+          });
 
 
     }) // end of jquery document function

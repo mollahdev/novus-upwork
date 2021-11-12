@@ -1,0 +1,95 @@
+.team-section {
+    padding-bottom: 120px;
+
+    .team {
+        &__content {
+            padding-top: 70px;
+        }
+
+        &__card {
+            display: flex;
+            column-gap: 60px;
+
+            &.space-between {
+                justify-content: space-between;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 70px;
+            }
+
+            &--content {
+                max-width: 530px;
+            }
+
+            &--image {
+                width: 270px;
+                img {
+                    width: 100%;
+                    border-radius: 8px;
+                }
+            }
+
+            &--name {
+                color: css_var('grey_white_color');
+                font-size: 40px;
+                padding-bottom: 8px;
+            }
+
+            &--designation {
+                color: css_var('primary_color');
+                font-size: 16px;
+                padding-bottom: 20px;
+            }
+
+            &--description {
+                color: css_var('grey_white_color');
+                font-size: 16px;
+                line-height: 26px;
+                padding-bottom: 25px;
+            }
+
+            li {
+                display: flex;
+                column-gap: 8px;
+                flex-wrap: wrap;
+                align-items: center;
+                line-height: 27px;
+
+                a:hover {
+                    color: css_var('primary_color');
+                }
+            }
+
+            &--label {
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                color: css_var('grey_white_color');
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            &--profile {
+                color: css_var('grey_white_color');
+                font-size: 16px;
+                font-weight: 500;
+
+                &::before {
+                    content: '';
+                    width: 4px;
+                    height: 4px;
+                    background-color: css_var('grey_white_color');
+                    border-radius: 50%;
+                    display: inline-block;
+                    margin-left: 9px;
+                    position: relative;
+                    left: -9px;
+                    top: -2px;
+                }
+            }
+        }
+    }
+
+
+}

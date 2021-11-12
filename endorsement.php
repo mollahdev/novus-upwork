@@ -17,14 +17,43 @@
             <div class="endorsement__content">
                     <!-- Slider main container -->
                     <div class="swiper">
+
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            ...
+                            <div class="swiper-slide">
+                                <div class="endorsement__card">
+                                    <img class="endorsement__card--image" src="./images/endorsement/endoresement-client-1.jpg" alt="endorsement photo">
+                                    <a class="endorsement__card--play open-popup-link" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><?php Icon::play() ?></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="endorsement__card">
+                                    <img class="endorsement__card--image" src="./images/endorsement/endoresement-client-1.jpg" alt="endorsement photo">
+                                    <a class="endorsement__card--play open-popup-link" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><?php Icon::play() ?></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="endorsement__card">
+                                    <img class="endorsement__card--image" src="./images/endorsement/endoresement-client-1.jpg" alt="endorsement photo">
+                                    <a class="endorsement__card--play open-popup-link" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><?php Icon::play() ?></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="endorsement__card">
+                                    <img class="endorsement__card--image" src="./images/endorsement/endoresement-client-1.jpg" alt="endorsement photo">
+                                    <a class="endorsement__card--play open-popup-link" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><?php Icon::play() ?></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="endorsement__card">
+                                    <img class="endorsement__card--image" src="./images/endorsement/endoresement-client-1.jpg" alt="endorsement photo">
+                                    <a class="endorsement__card--play open-popup-link" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><?php Icon::play() ?></a>
+                                </div>
+                            </div>
                         </div>
+
+
                         <!-- If we need pagination -->
                         <div class="swiper-pagination"></div>
 
