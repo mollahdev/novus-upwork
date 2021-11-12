@@ -1,0 +1,26 @@
+.solution-section {
+    padding-bottom: 150px;
+
+    .solution {
+        max-width: 720px;
+        margin: 0 auto;
+
+        &__content {
+            padding-top: 70px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-column-gap: 80px;
+            grid-row-gap: 40px;
+        }
+
+        &-card--icon {
+            padding-bottom: 8px;
+        }
+
+        &-card--description {
+            color: css_var('secondary_color');
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.banner-section {
+    padding: 280px 0;
+    background: use_image('banner-background.png');
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: right 162px;
+
+    .banner {
+
+        &--subtitle {
+            background: rgba(96, 254, 235, 0.1);
+            border-radius: 100px;
+            display: inline-block;
+            padding: 8px 20px;
+            font-size: 16px;
+            font-weight: 400;
+            color: css_var('primary_color');
+        }
+
+        &--title {
+            color: css_var('grey_white_color');
+            font-size: 52px;
+            line-height: 60px;
+            font-family: $primary_font;
+            font-weight: 700;
+            padding: 30px 0 40px 0;
+        }
+
+    }
+}

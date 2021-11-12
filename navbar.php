@@ -15,23 +15,23 @@
         ],
 
         'menu_2' => [
+            'label' => 'Services',
+            'href'  => '#service_section'
+        ],
+
+        'menu_3' => [
+            'label' => 'Solutions',
+            'href'  => '#solutions_section'
+        ],
+
+        'menu_4' => [
             'label' => 'Portfolio',
             'href'  => '#portfolio_section'
         ],
 
-        'menu_3' => [
-            'label' => 'Team',
-            'href'  => '#team_section'
-        ],
-
-        'menu_4' => [
-            'label' => 'Blog',
-            'href'  => '#blog_section'
-        ],
-
         'menu_5' => [
-            'label' => 'Carrers',
-            'href'  => '#carrers_section'
+            'label' => 'Endorsment',
+            'href'  => '#endorsment_section'
         ],
     ];
 
@@ -71,7 +71,11 @@
             </nav>
         
             <div class="navbar--button">
-                <?php Components::Ripple_Button('On Upwork', UPWORK_PROFILE_URL, 'style-1') ?>
+                <a class="secondary-btn whatsapp-btn" href="tel:+1234567989">
+                    <?php Icon::whatsapp() ?>
+                    <span>Contact us</span>
+                </a>
+                <?php Components::Ripple_Button('On Upwork', UPWORK_PROFILE_URL, 'style-2') ?>
             </div>
             
         </div>

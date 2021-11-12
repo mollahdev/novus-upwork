@@ -1,6 +1,11 @@
 .navbar-section {
-    background: css_var('header_bg_color');
+    background: #0d1c327d;
     padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    backdrop-filter: blur(6px);
 
     .navbar {
         display: flex;
@@ -18,6 +23,7 @@
                 &--link {
                     color: css_var('white_color');
                     font-weight: 600;
+                    font-size: 16px;
 
                     &:hover,
                     &.active {
@@ -25,6 +31,16 @@
                     }
                 }
                 
+            }
+        }
+
+        &--button{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            .primary-button {
+                margin-bottom: -4px;
             }
         }
     }

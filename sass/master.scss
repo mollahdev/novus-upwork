@@ -3,6 +3,7 @@
     './utils/variables',
     './utils/mixins',
     './utils/functions',
+    './utils/keyframes',
     './utils/extends';
 
 
@@ -11,8 +12,16 @@
     './base/common';
 
 @import
+    './components/secondary-button',
+    './components/section-header',
     './components/ripple-button';
 
 @import
-    './layouts/header';
+    './layouts/header',
+    './layouts/cta',
+    './layouts/service',
+    './layouts/solution',
+    './layouts/portfolio',
+    './layouts/endorsement',
+    './layouts/banner';
 

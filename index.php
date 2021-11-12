@@ -22,24 +22,21 @@
      *  
      */ 
     include './components.php';
+    include './icon.php';
 
     /**
      * 
-     * Include Navigation markup 
+     * Include body content
      * 
      */ 
 
     include './navbar.php';
-
-    ?>
-
-        <div class="container">
-            <h1>
-                We deliver web development, design and QA for your business growth.
-            </h1>
-        </div>
-
-    <?php 
+    include './banner.php';
+    include './cta.php';
+    include './service.php';
+    include './solution.php';
+    include './portfolio.php';
+    include './endorsement.php';
 
     /**
      * 
@@ -48,5 +45,4 @@
      */ 
     include './footer.php';
 
-?>
 

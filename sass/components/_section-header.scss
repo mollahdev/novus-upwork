@@ -1,0 +1,27 @@
+.section-header {
+    
+    &.center {
+        text-align: center;
+    }
+
+    &.right {
+        text-align: right;
+    }
+
+    &--subtitle {
+        color: css_var('primary_color');
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: $secondary_font;
+        font-weight: 400;
+    }
+
+    &--title {
+        color: css_var('white_color');
+        font-size: 48px;
+        font-family: $primary_font;
+        margin-top: 25px;
+    }
+
+}

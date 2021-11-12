@@ -1,0 +1,111 @@
+.portfolio-section {
+    padding-bottom: 150px;
+
+    .portfolio__content {
+        padding-top: 60px;
+        img {
+            width: 100%;
+        }
+    }
+
+
+    .portfolio__nav {
+        padding-bottom: 50px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+
+        }
+
+        &--btn {
+            color: css_var('primary_color');
+            font-size: 16px;
+            font-weight: 400;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all linear .2s;
+            user-select: none;
+
+            &:hover,
+            &.active {
+                background: rgba(32, 193, 254, 0.15);
+                border-radius: 4px;
+            }
+        }
+    }
+
+
+    .portfolio__tab {
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+
+            &.active {
+                display: grid;
+                visibility: visible;
+                opacity: 1;
+                animation-name: upwork-short-slide-up;
+                animation-duration: .5s;
+            }
+        }
+    }
+
+    .portfolio__card {
+        position: relative;
+        overflow: clip;
+        border-radius: 8px;
+
+        img {
+            transition: all linear .3s;
+        }
+
+        &:hover {
+            img {
+                filter: grayscale(1);
+                transform: scale(1.1);
+            }
+            .portfolio__card--overlay {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        &--title {
+            color: css_var('dark_color');
+            font-size: 24px;
+            padding-bottom: 15px;
+        }
+
+        &--description {
+            color: css_var('dark_color');
+            line-height: 26px;
+            font-size: 16px;
+        }
+
+        &--overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba( sass_var('white_color'), .85);
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: all linear .2s;
+            transform: scale(1.1);
+        }
+    }
+
+}

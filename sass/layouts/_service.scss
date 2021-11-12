@@ -1,0 +1,84 @@
+.service-section {
+    padding: 150px 0;
+    --gap: 25px;
+
+    .service {
+       
+        &-grid {
+            padding-top: 60px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--gap);
+
+            .left-column {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: var(--gap);
+            }
+
+            .right-column {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: var(--gap);
+            }
+        }
+
+        &-card {
+            background: rgba(96, 254, 235, 0.03);
+            border-radius: 8px;
+            padding: 25px;
+            position: relative;
+
+            &:hover {
+                .service-card--icon {
+                    path {
+                        fill: css_var('white_color');
+                    }
+                }
+            }
+
+            &--icon {
+                position: absolute;
+                right: 25px;
+                top: 25px;
+                background:rgba(96, 254, 235, 0.08);
+                border-radius: inherit;
+                width: 56px;
+                height: 56px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: width .2s;
+                path {
+                    transition: all linear .2s;
+                }
+            }
+
+            &--title {
+                max-width: calc(100% - 80px);
+            }
+
+            li {
+                color: css_var('secondary_color');
+                font-family: $secondary_font;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 26px;
+            }
+
+            &--badge {
+                border-radius: 2px;
+                background: css_var('primary_color');
+                color: css_var('header_bg_color');
+                font-size: 15px;
+                font-weight: 500;
+                padding: 5px 12px;
+                margin-bottom: 22px;
+            }
+
+            &.wordpress {
+                grid-column: 1/3;
+            }
+        }
+    }
+}
