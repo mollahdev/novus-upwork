@@ -89,8 +89,23 @@
             const swiper = new Swiper( swiperSlider, {
                 // Optional parameters
                 loop: true,
-                slidesPerView: 3,
-                spaceBetween: 25,
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                      slidesPerView: 1,
+                      spaceBetween: 0
+                    },
+                    // when window width is >= 450
+                    500: {
+                      slidesPerView: 2,
+                      spaceBetween: 10
+                    },
+                    // when window width is >= 640px
+                    660: {
+                      slidesPerView: 3,
+                      spaceBetween: 25,
+                    }
+                },
 
                 autoplay: {
                     delay: 3000,

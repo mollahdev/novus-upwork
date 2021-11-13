@@ -18,6 +18,12 @@
         background-position: right 50px;
     }
 
+    @include responsive($mobile) {
+        background-size: 0;
+        padding: 130px 0 90px 0;
+        text-align: center;
+    }
+
     .banner {
 
         &--subtitle {
@@ -28,6 +34,26 @@
             font-size: 16px;
             font-weight: 400;
             color: css_var('primary_color');
+
+            @include responsive($mobile) {
+                background: transparent;
+                padding: 0;
+                border-radius: 0px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                letter-spacing: 0.24px;
+
+                span {
+                    background: rgba(96, 254, 235, 0.1);
+                    padding: 5px 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100px;
+                    align-self: center;
+                }
+            }
         }
 
         &--title {
@@ -38,6 +64,13 @@
             font-weight: 700;
             padding: 30px 0 40px 0;
 
+            span {
+                display: block;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: $primary_font;
+            }
+
             @include responsive($default_width) {
                 font-size: 44px;
                 line-height: 54px;
@@ -46,6 +79,16 @@
             @include responsive($tablet) {
                 font-size: 36px;
 	            line-height: 48px;
+            }
+
+            @include responsive($mobile) {
+                span {
+                    display: inline;
+                }
+                font-size: 32px;
+                line-height: 42px;
+                max-width: 333px;
+                margin: 0 auto;
             }
         }
 

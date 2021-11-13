@@ -13,6 +13,10 @@
         padding: 30px 0;
     }
 
+    @include responsive($mobile) {
+        padding: 30px 15px;
+    }
+
     .responsive-header {
         position: relative;
         &--head {
@@ -33,6 +37,10 @@
                 @include responsive($tablet) {
                     font-size: 34px;
                 }
+
+                @include responsive($mobile) {
+                    font-size: 26px;
+                }
             }
 
             .hamburger-close-btn {
@@ -48,10 +56,18 @@
                     right: 30px;
                 }
 
+                @include responsive($mobile) {
+                    right: 35px;
+                }
+
                 .svg-icon {
                     width: 30px;
                     @include responsive($tablet) {
                         width: 25px;
+                    }
+
+                    @include responsive($mobile) {
+                        width: 18px;
                     }
                     
                 }
@@ -82,6 +98,11 @@
                             font-size: 24px;
                         }
 
+                        
+                        @include responsive($mobile) {
+                            font-size: 18px;
+                        }
+
                         &:hover {
                             color: css_var('primary_color');
                         }
@@ -96,6 +117,10 @@
             justify-content: start;
             gap: 16px;
             align-items: center;
+
+            @include responsive($mobile) {
+                flex-direction: column;
+            }
 
             .ripple_effect {
                 padding: 12px 32px;
@@ -114,7 +139,16 @@
             justify-content: flex-start;
             gap: 21px;
 
-    
+            @include responsive($mobile) {
+                flex-direction: column;
+                margin-top: 60px;
+
+                &--copyright {
+                    font-size: 14px !important;
+                    color: css_var('secondary_color') !important;
+                }
+            }
+
             &--social-profile {
                 .svg-icon {
                     width: 22px;   
@@ -151,6 +185,10 @@
                 * {
                     color: css_var('grey_white_color');
                     font-size: 16px;
+
+                    @include responsive($mobile) {
+                        text-align: center;
+                    }        
                 }
     
                 a:hover {

@@ -1,18 +1,45 @@
 .footer-section {
     padding: 40px 0;
 
+    @include responsive($mobile) {
+        background: #0d1c328a;
+        text-align: center;
+    }
+
     .footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         gap: 15px;
+        
+        @include responsive($mobile) {
+            flex-direction: column;
+        }
+
 
         &--logo {
             margin-right: 20px;
+
+            
+            @include responsive($mobile) {
+                margin-right: 0;
+                display: block;
+            }
+        }
+
+        &--copyright {
+            @include responsive($mobile) {
+                color: css_var('secondary_color') !important;
+                font-size: 14px !important;
+            }
         }
 
         &--social-profile {
+            @include responsive($mobile) {
+                margin: 20px 5px;
+            }
+
             .svg-icon {
                 width: 22px;   
             }
@@ -44,6 +71,10 @@
             display: flex;
             align-items: center;
             gap: 15px;
+
+            @include responsive($mobile) {
+                display: unset;
+            }
 
             * {
                 color: css_var('grey_white_color');

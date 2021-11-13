@@ -18,9 +18,9 @@
                 <!-- Portfolio Nav Menu -->
                 <div class="portfolio__nav">
                     <ul>
-                        <li class="portfolio__nav--btn active" data-target="#web-design">Web design</li>
-                        <li class="portfolio__nav--btn" data-target="#web-development">Web development</li>
-                        <li class="portfolio__nav--btn" data-target="#3d-modeling">3D modeling</li>
+                        <li class="portfolio__nav--btn active" data-target="#web-design">Web Design</li>
+                        <li class="portfolio__nav--btn" data-target="#web-development">Web Dev</li>
+                        <li class="portfolio__nav--btn" data-target="#3d-modeling">3D Design</li>
                     </ul>
                 </div>
                 <!-- Portfolio content -->

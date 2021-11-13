@@ -30,12 +30,24 @@
                 column-gap: 30px;
             }
 
+            @include responsive($mobile) {
+                background: #0d1c325e;
+                column-gap: 15px;
+                padding: 20px;
+                border-radius: 4px;
+                display: grid;
+                grid-template-columns: 72px 1fr;
+            }
+
             &.space-between {
                 justify-content: space-between;
             }
 
             &:not(:last-child) {
                 margin-bottom: 70px;
+                @include responsive($mobile) {
+                    margin-bottom: 20px;
+                }
             }
 
             &--content {
@@ -47,9 +59,17 @@
                 @include responsive($default_width) {
                     width: 340px;
                 }
+                @include responsive($mobile) {
+                    order: -1;
+                    width: auto;
+                }
+
                 img {
                     width: 100%;
                     border-radius: 8px;
+                    @include responsive($mobile) {
+                        border-radius: 4px;
+                    }
                 }
             }
 
@@ -65,12 +85,19 @@
                 @include responsive($tablet) {
                     font-size: 30px;
                 }
+
+                @include responsive($mobile) {
+                    font-size: 20px;
+                }
             }
 
             &--designation {
                 color: css_var('primary_color');
                 font-size: 16px;
                 padding-bottom: 20px;
+                @include responsive($mobile) {
+                    font-size: 14px;
+                }
             }
 
             &--description {
@@ -78,6 +105,23 @@
                 font-size: 16px;
                 line-height: 26px;
                 padding-bottom: 25px;
+
+                @include responsive($mobile) {
+                    margin-top: 15px;
+                    margin-left: -87px;
+                    padding-bottom: 15px;
+                    font-size: 15px;
+                    color: css_var('secondary_color');
+                }
+            }
+
+            ul {
+                @include responsive($mobile) {
+                    margin-left: -87px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
             }
 
             li {
@@ -86,6 +130,14 @@
                 flex-wrap: wrap;
                 align-items: center;
                 line-height: 30px;
+
+                @include responsive($mobile) {
+                    background: #ffffff14;
+                    justify-content: center;
+                    width: 31px;
+                    padding-left: 9px;
+                    border-radius: 5px;
+                }
 
                 a:hover {
                     color: css_var('primary_color');
@@ -100,6 +152,10 @@
                 font-size: 16px;
                 font-weight: 500;
 
+                @include responsive($mobile) {
+                    font-size: 0;
+                }
+
                 .svg-icon {
                     width: 18px;
                 }
@@ -109,6 +165,10 @@
                 color: css_var('grey_white_color');
                 font-size: 16px;
                 font-weight: 500;
+
+                @include responsive($mobile) {
+                    display: none;
+                }
 
                 &::before {
                     content: '';

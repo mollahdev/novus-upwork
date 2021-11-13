@@ -28,6 +28,11 @@
                 grid-column-gap: 20px;
             }
 
+            @include responsive($mobile) {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
         }
 
         &-card--icon {
@@ -42,6 +47,10 @@
             color: css_var('secondary_color');
             font-weight: 400;
             line-height: 24px;
+            
+            @include responsive($mobile) {
+                max-width: 330px;
+            }
         }
     }
 }

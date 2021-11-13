@@ -5,6 +5,10 @@
     padding: 10px 22px;
     border-radius: 4px;
 
+    @include responsive($mobile) {
+        padding: 13px 35px;
+    }
+
     .ripple_button__text {
         position: relative;
         z-index: 1;

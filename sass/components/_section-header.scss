@@ -8,6 +8,12 @@
         text-align: right;
     }
 
+
+    
+    @include responsive($mobile) {
+        text-align: center;
+    }
+
     &--subtitle {
         color: css_var('primary_color');
         letter-spacing: 4px;
@@ -31,6 +37,11 @@
         @include responsive($tablet) {
             font-size: 34px;
             margin-top: 10px;
+        }
+
+        @include responsive($mobile) {
+            font-size: 26px;
+            margin-top: 5px;
         }
     }
 
