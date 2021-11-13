@@ -1,0 +1,26 @@
+.spinner{
+    display:none;
+    position:relative;
+    width:18px;
+    height:18px;
+    border-radius:18px;
+    background:rgba(0,0,0,.5);
+    -webkit-animation:infinite-spinning 1.08s linear infinite;
+    animation:infinite-spinning 1.08s linear infinite;
+    vertical-align:middle;
+    margin-right:7px;
+    top:-1px
+}
+
+
+.spinner:after{
+    content:"";
+    position:absolute;
+    top:2px;
+    left:50%;
+    width:4px;
+    height:4px;
+    border-radius:4px;
+    margin-left:-2px;
+    background:#fff
+}

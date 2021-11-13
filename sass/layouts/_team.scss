@@ -1,7 +1,11 @@
 .team-section {
-    padding-bottom: 120px;
+    padding-top: 150px;
 
     .team {
+
+        max-width: 900px;
+        margin: 0 auto;
+
         &__content {
             padding-top: 70px;
         }
@@ -54,7 +58,7 @@
                 column-gap: 8px;
                 flex-wrap: wrap;
                 align-items: center;
-                line-height: 27px;
+                line-height: 30px;
 
                 a:hover {
                     color: css_var('primary_color');
@@ -68,6 +72,10 @@
                 color: css_var('grey_white_color');
                 font-size: 16px;
                 font-weight: 500;
+
+                .svg-icon {
+                    width: 18px;
+                }
             }
 
             &--profile {

@@ -109,7 +109,101 @@
                 },
               
               });
+        },
+
+        /**
+         * 
+         * 
+         * Contact Form
+         *  
+         */
+
+        contactForm: function( $scope ) {
+           const submit     = $scope.find('#submit-btn');
+           const form       = $scope.find('#contact-form');
+           const name       = $scope.find('#name');
+           const email      = $scope.find('#email');
+           const phone      = $scope.find('#phone');
+           const country    = $scope.find('#country');
+           const message    = $scope.find('#message');
+           const response   = $scope.find('#response');
+           const action     = form.attr('action');
+
+           console.log(action)
+
+           const error = (message = false) => {
+                if( message === false ) {
+                    response.html('');
+                    submit.addClass('loading');
+
+                } else {
+                    response[0].scrollIntoView({
+                        behavior: 'smooth',
+                        block  : 'center'
+                    })
+                    response.html(`<p>${message}</p>`);
+                }
+           }
+
+           const success= () => {
+               form.html(
+                    `<div class="success-markup">
+                        <span class="check-icon">&check;</span>
+                        <p>Your message has successfully submitted</p>
+                    </div>`
+               )
+           }
+
+           const validateEmail = (emailAddress) => {
+                const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(emailAddress).toLowerCase());
+            }
+
+            
+
+           submit.on('click', () => {
+                const nameValue = name.val().trim();
+                const emailValue = email.val().trim();
+
+                if( nameValue.length === 0 || emailValue.length === 0 ) {
+                    error('Name or Email field is empty!');
+                    return false;
+                }
+
+                if( !validateEmail(emailValue) ) {
+                    error('Please enter a valid email address');
+                    return false;
+                }
+
+                const data = {
+                    name    : nameValue,
+                    email   : emailValue,
+                    phone   : phone.val().trim(),
+                    country : country.val().trim(),
+                    message : message.val().trim()
+                }
+                // send ajax request
+
+                const url = new URL( action );
+                url.search = new URLSearchParams( data );
+
+                fetch(url.href)
+                .then(response => {
+
+                    setTimeout(()=>{
+                        success();
+                        console.log(response)
+                    },2000)
+
+                } )
+            
+            error();
+           
+            return false;
+           })
+
         }
+
 
      });
 
@@ -153,12 +247,20 @@
          * Popup video 
          * 
          */ 
-         $('.open-popup-link').magnificPopup({
+        $('.open-popup-link').magnificPopup({
             type: 'iframe',
             mainClass: 'mfp-fade',
             removalDelay: 160,
             preloader: false,
-          });
+        });
+
+        /***
+         * 
+         * contact form 
+         * 
+         */
+
+        $.fn.contactForm($('.form-container'));
 
 
     }) // end of jquery document function

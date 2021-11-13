@@ -38,6 +38,7 @@
     include './portfolio.php';
     include './endorsement.php';
     include './team.php';
+    include './contact.php';
 
     /**
      * 
@@ -45,5 +46,4 @@
      *  
      */ 
     include './footer.php';
-
-
+    

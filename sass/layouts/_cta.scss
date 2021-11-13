@@ -19,6 +19,12 @@
             flex-direction: column;
             justify-content: center;
 
+            &--link {
+                svg {
+                    width: 24px;
+                }
+            }
+
             &--title {
                 color: css_var('grey_white_color');
                 font-family: $primary_font;

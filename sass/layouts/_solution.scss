@@ -1,5 +1,5 @@
 .solution-section {
-    padding-bottom: 150px;
+    padding-top: 150px;
 
     .solution {
         max-width: 720px;
@@ -15,6 +15,10 @@
 
         &-card--icon {
             padding-bottom: 8px;
+            
+            .svg-icon {
+                width: 30px;
+            }
         }
 
         &-card--description {

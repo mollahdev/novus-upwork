@@ -1,5 +1,6 @@
 .service-section {
-    padding: 150px 0;
+    padding-top: 150px;
+    
     --gap: 25px;
 
     .service {
@@ -29,6 +30,12 @@
             padding: 25px;
             position: relative;
 
+            &.ux-ui {
+                .svg-icon {
+                    width: 19px;
+                }
+            }
+
             &:hover {
                 .service-card--icon {
                     path {
@@ -49,6 +56,11 @@
                 justify-content: center;
                 align-items: center;
                 transition: width .2s;
+
+                .svg-icon {
+                    width: 28px;
+                }
+
                 path {
                     transition: all linear .2s;
                 }

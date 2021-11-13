@@ -11,27 +11,27 @@
     $navbar_menu = [
         'menu_1' => [
             'label' => 'Home',
-            'href'  => HOME_URL
+            'href'  => '#banner'
         ],
 
         'menu_2' => [
             'label' => 'Services',
-            'href'  => '#service_section'
+            'href'  => '#service'
         ],
 
         'menu_3' => [
             'label' => 'Solutions',
-            'href'  => '#solutions_section'
+            'href'  => '#solution'
         ],
 
         'menu_4' => [
             'label' => 'Portfolio',
-            'href'  => '#portfolio_section'
+            'href'  => '#portfolio'
         ],
 
         'menu_5' => [
             'label' => 'Endorsment',
-            'href'  => '#endorsment_section'
+            'href'  => '#endorsement'
         ],
     ];
 

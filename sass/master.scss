@@ -1,4 +1,3 @@
-
 @import 
     './utils/variables',
     './utils/mixins',
@@ -12,17 +11,19 @@
     './base/common';
 
 @import
+    './components/spinner',
     './components/secondary-button',
     './components/section-header',
     './components/ripple-button';
 
 @import
     './layouts/header',
+    './layouts/banner',
     './layouts/cta',
     './layouts/service',
     './layouts/solution',
     './layouts/portfolio',
     './layouts/endorsement',
     './layouts/team',
-    './layouts/banner';
-
+    './layouts/contact',
+    './layouts/footer';
