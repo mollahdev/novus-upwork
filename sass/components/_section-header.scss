@@ -22,6 +22,16 @@
         font-size: 48px;
         font-family: $primary_font;
         margin-top: 25px;
+
+        @include responsive($default_width) {
+            font-size: 40px;
+            margin-top: 20px;
+        }
+
+        @include responsive($tablet) {
+            font-size: 34px;
+            margin-top: 10px;
+        }
     }
 
     &--description {

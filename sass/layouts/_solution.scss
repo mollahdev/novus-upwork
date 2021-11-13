@@ -1,16 +1,33 @@
 .solution-section {
     padding-top: 150px;
 
+    @include responsive($default_width) {
+        padding-top: 120px;
+    }
+
+    @include responsive($tablet) {
+         padding-top: 90px;
+    }
+
     .solution {
         max-width: 720px;
         margin: 0 auto;
 
         &__content {
-            padding-top: 70px;
+            padding-top: 60px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: 1fr 1fr;
             grid-column-gap: 80px;
             grid-row-gap: 40px;
+
+            @include responsive($default_width) {
+                padding-top: 40px;
+            }
+
+            @include responsive($tablet) {
+                grid-column-gap: 20px;
+            }
+
         }
 
         &-card--icon {

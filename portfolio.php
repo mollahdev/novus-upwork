@@ -35,32 +35,32 @@
                         <div class="portfolio__card">
                             <img class="portfolio__card--image" src="./images/portfolio/web-design-demo-1.jpg" alt="portfolio image">
                             <div class="portfolio__card--overlay">
-                                <h3 class="portfolio__card--title">Foodhub application</h3>
-                                <p class="portfolio__card--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh a ut eget a varius elementum, accumsan urna lacinia. Lorem fames volutpat risus leo.</p>
+                                <h3 class="portfolio__card--title">Interview with Russian Performance Publication </h3>
+                                <p class="portfolio__card--description">Was over in Barcelona at the Affiliate World conference  and got hit up by the Zorbas Media guys.</p>
                             </div>
                         </div>
 
                         <div class="portfolio__card">
                             <img class="portfolio__card--image" src="./images/portfolio/web-design-demo-2.jpg" alt="portfolio image">
                             <div class="portfolio__card--overlay">
-                                <h3 class="portfolio__card--title">Foodhub application</h3>
-                                <p class="portfolio__card--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh a ut eget a varius elementum, accumsan urna lacinia. Lorem fames volutpat risus leo.</p>
+                                <h3 class="portfolio__card--title">Interview with Russian Performance Publication </h3>
+                                <p class="portfolio__card--description">Was over in Barcelona at the Affiliate World conference  and got hit up by the Zorbas Media guys.</p>
                             </div>
                         </div>
 
                         <div class="portfolio__card">
                             <img class="portfolio__card--image" src="./images/portfolio/web-design-demo-3.jpg" alt="portfolio image">
                             <div class="portfolio__card--overlay">
-                                <h3 class="portfolio__card--title">Foodhub application</h3>
-                                <p class="portfolio__card--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh a ut eget a varius elementum, accumsan urna lacinia. Lorem fames volutpat risus leo.</p>
+                                <h3 class="portfolio__card--title">Interview with Russian Performance Publication </h3>
+                                <p class="portfolio__card--description">Was over in Barcelona at the Affiliate World conference  and got hit up by the Zorbas Media guys.</p>
                             </div>
                         </div>
 
                         <div class="portfolio__card">
                             <img class="portfolio__card--image" src="./images/portfolio/web-design-demo-1.jpg" alt="portfolio image">
                             <div class="portfolio__card--overlay">
-                                <h3 class="portfolio__card--title">Foodhub application</h3>
-                                <p class="portfolio__card--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh a ut eget a varius elementum, accumsan urna lacinia. Lorem fames volutpat risus leo.</p>
+                                <h3 class="portfolio__card--title">Interview with Russian Performance Publication </h3>
+                                <p class="portfolio__card--description">Was over in Barcelona at the Affiliate World conference  and got hit up by the Zorbas Media guys.</p>
                             </div>
                         </div>
 
@@ -76,32 +76,32 @@
                         <div class="portfolio__card">
                             <img class="portfolio__card--image" src="./images/portfolio/web-design-demo-2.jpg" alt="portfolio image">
                             <div class="portfolio__card--overlay">
-                                <h3 class="portfolio__card--title">Foodhub application</h3>
-                                <p class="portfolio__card--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh a ut eget a varius elementum, accumsan urna lacinia. Lorem fames volutpat risus leo.</p>
+                                <h3 class="portfolio__card--title">Interview with Russian Performance Publication </h3>
+                                <p class="portfolio__card--description">Was over in Barcelona at the Affiliate World conference  and got hit up by the Zorbas Media guys.</p>
                             </div>
                         </div>
 
                         <div class="portfolio__card">
                             <img class="portfolio__card--image" src="./images/portfolio/web-design-demo-3.jpg" alt="portfolio image">
                             <div class="portfolio__card--overlay">
-                                <h3 class="portfolio__card--title">Foodhub application</h3>
-                                <p class="portfolio__card--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh a ut eget a varius elementum, accumsan urna lacinia. Lorem fames volutpat risus leo.</p>
+                                <h3 class="portfolio__card--title">Interview with Russian Performance Publication </h3>
+                                <p class="portfolio__card--description">Was over in Barcelona at the Affiliate World conference  and got hit up by the Zorbas Media guys.</p>
                             </div>
                         </div>
 
                         <div class="portfolio__card">
                             <img class="portfolio__card--image" src="./images/portfolio/web-design-demo-1.jpg" alt="portfolio image">
                             <div class="portfolio__card--overlay">
-                                <h3 class="portfolio__card--title">Foodhub application</h3>
-                                <p class="portfolio__card--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh a ut eget a varius elementum, accumsan urna lacinia. Lorem fames volutpat risus leo.</p>
+                                <h3 class="portfolio__card--title">Interview with Russian Performance Publication </h3>
+                                <p class="portfolio__card--description">Was over in Barcelona at the Affiliate World conference  and got hit up by the Zorbas Media guys.</p>
                             </div>
                         </div>
 
                         <div class="portfolio__card">
                             <img class="portfolio__card--image" src="./images/portfolio/web-design-demo-1.jpg" alt="portfolio image">
                             <div class="portfolio__card--overlay">
-                                <h3 class="portfolio__card--title">Foodhub application</h3>
-                                <p class="portfolio__card--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh a ut eget a varius elementum, accumsan urna lacinia. Lorem fames volutpat risus leo.</p>
+                                <h3 class="portfolio__card--title">Interview with Russian Performance Publication </h3>
+                                <p class="portfolio__card--description">Was over in Barcelona at the Affiliate World conference  and got hit up by the Zorbas Media guys.</p>
                             </div>
                         </div>
 
@@ -125,8 +125,8 @@
                         <div class="portfolio__card">
                             <img class="portfolio__card--image" src="./images/portfolio/web-design-demo-1.jpg" alt="portfolio image">
                             <div class="portfolio__card--overlay">
-                                <h3 class="portfolio__card--title">Foodhub application</h3>
-                                <p class="portfolio__card--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh a ut eget a varius elementum, accumsan urna lacinia. Lorem fames volutpat risus leo.</p>
+                                <h3 class="portfolio__card--title">Interview with Russian Performance Publication </h3>
+                                <p class="portfolio__card--description">Was over in Barcelona at the Affiliate World conference  and got hit up by the Zorbas Media guys.</p>
                             </div>
                         </div>
 

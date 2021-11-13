@@ -1,8 +1,21 @@
 .portfolio-section {
     padding-top: 150px;
 
+    @include responsive($default_width) {
+        padding-top: 100px;
+    }
+
+    @include responsive($tablet) {
+        padding-top: 70px;
+    }
+
     .portfolio__content {
         padding-top: 60px;
+
+        @include responsive($default_width) {
+            padding-top: 40px;
+        }
+
         img {
             width: 100%;
         }
@@ -11,6 +24,10 @@
 
     .portfolio__nav {
         padding-bottom: 50px;
+
+        @include responsive($tablet) {
+            padding-bottom: 30px;
+        }
 
         ul {
             display: flex;
@@ -47,6 +64,10 @@
             visibility: hidden;
             opacity: 0;
 
+            @include responsive($tablet) {
+                gap: 10px;
+            }
+
             &.active {
                 display: grid;
                 visibility: visible;
@@ -62,6 +83,12 @@
         overflow: clip;
         border-radius: 8px;
 
+        @include responsive($tablet) {
+            border-radius: 0px;
+            overflow: unset;
+            background: css_var('deep_blue_color');
+        }
+
         img {
             transition: all linear .3s;
         }
@@ -75,18 +102,35 @@
                 opacity: 1;
                 transform: scale(1);
             }
+
+            @include responsive($tablet) {
+                img {
+                    filter: grayscale(0);
+                    transform: scale(1);
+                }
+            }
         }
+
 
         &--title {
             color: css_var('dark_color');
             font-size: 24px;
             padding-bottom: 15px;
+
+            @include responsive($tablet) {
+                font-size: 20px;
+                color: css_var('grey_white_color');
+            }
         }
 
         &--description {
             color: css_var('dark_color');
             line-height: 26px;
             font-size: 16px;
+            @include responsive($tablet) {
+                font-size: 15px;
+                color: css_var('secondary_color');
+            }
         }
 
         &--overlay {
@@ -105,6 +149,19 @@
             opacity: 0;
             transition: all linear .2s;
             transform: scale(1.1);
+
+            @include responsive($default_width) {
+                padding: 20px;
+            }
+
+            @include responsive($tablet) {
+                position: static;
+                display: block;
+                opacity: 1;
+                background: transparent;
+                transform: scale(1);
+                text-align: left;
+            }
         }
     }
 

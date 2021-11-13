@@ -3,7 +3,7 @@
  * Author   : Ashraf
  * Version  : 1.0.0
  * suppport : mollah.dev@gmail.com
- * File     : main script file forthe project 
+ * File     : main script file for the project 
  * 
  */ 
 
@@ -128,8 +128,6 @@
            const message    = $scope.find('#message');
            const response   = $scope.find('#response');
            const action     = form.attr('action');
-
-           console.log(action)
 
            const error = (message = false) => {
                 if( message === false ) {
@@ -261,6 +259,13 @@
          */
 
         $.fn.contactForm($('.form-container'));
+
+        /***
+         * 
+         * Header Script 
+         * 
+         */
+        $.fn.headerScript()
 
 
     }) // end of jquery document function

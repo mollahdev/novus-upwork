@@ -1,6 +1,14 @@
 .team-section {
     padding-top: 150px;
 
+    @include responsive($default_width) {
+        padding-top: 120px;
+    }
+
+    @include responsive($tablet) {
+        padding-top: 70px;
+    }
+
     .team {
 
         max-width: 900px;
@@ -8,11 +16,19 @@
 
         &__content {
             padding-top: 70px;
+
+            @include responsive($default_width) {
+                padding-top: 40px;
+            }
         }
 
         &__card {
             display: flex;
             column-gap: 60px;
+
+            @include responsive($default_width) {
+                column-gap: 30px;
+            }
 
             &.space-between {
                 justify-content: space-between;
@@ -28,6 +44,9 @@
 
             &--image {
                 width: 270px;
+                @include responsive($default_width) {
+                    width: 340px;
+                }
                 img {
                     width: 100%;
                     border-radius: 8px;
@@ -38,6 +57,14 @@
                 color: css_var('grey_white_color');
                 font-size: 40px;
                 padding-bottom: 8px;
+
+                @include responsive($default_width) {
+                    font-size: 34px;
+                }
+
+                @include responsive($tablet) {
+                    font-size: 30px;
+                }
             }
 
             &--designation {

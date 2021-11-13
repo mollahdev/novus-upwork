@@ -1,6 +1,14 @@
 .endorsement-section {
     padding-top: 150px;
 
+    @include responsive($default_width) {
+        padding-top: 120px;
+    }
+
+    @include responsive($tablet) {
+        padding-top: 90px;
+    }
+
     img {
         width: 100%;
     }

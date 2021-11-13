@@ -1,23 +1,48 @@
 .contact-section {
 
     --gap: 25px;
-    padding-top: 150px;
+    margin-top: 150px;
     display: grid;
     grid-template-columns: 2fr 1.6fr;
     column-gap: 90px;
     position: relative;
+
+    @include responsive($default_width) {
+        margin-top: 70px;
+        grid-template-columns: 1fr 1fr;
+        column-gap:0;
+    }
     
+    @include responsive($tablet) {
+        grid-template-columns: 1fr;
+        padding-bottom: 50px;
+        --gap: 15px;
+    }
+
     .form-container {
         position: absolute;
         width: 100%;
         top: 50%;
         transform: translateY(-50%);
+
+        @include responsive($tablet) {
+            position: static;
+            transform: translate(0);
+        }
     }
 
     .contact-map {
         height: 800px;
         object-fit: cover;
         width: 100%;
+
+        @include responsive($default_width) {
+            height: 700px;
+        }
+
+        @include responsive($tablet) {
+            display: none;
+        }
     }
 
     .row {
@@ -33,6 +58,14 @@
         padding-top: 40px;
         gap: var(--gap);
 
+        @include responsive($default_width) {
+            width: 47%;
+        }
+
+        @include responsive($tablet) {
+            width: 100%;
+        }
+
         textarea {
             resize: vertical;
         }
@@ -45,6 +78,7 @@
             color: css_var('grey_white_color');
             border: 1px solid transparent;
             transition: border .2s;
+            width: 100%;
             
             &::placeholder {
                 color: css_var('grey_white_color');
@@ -79,6 +113,10 @@
             position: relative;
             user-select: none;
 
+            @include responsive($default_width) {
+                margin-top: 10px;
+            }
+
             &.loading {
                 pointer-events: none;
                 filter: grayscale(1);
@@ -106,6 +144,14 @@
             margin-top: 30px;
             border: 3px solid #ff9191;
             font-size: 19px;
+
+            @include responsive($default_width) {
+                width: 47%;
+            }
+
+            @include responsive($tablet) {
+                width: 100%;
+            }
         }
     }
 
@@ -115,6 +161,10 @@
         align-items: center;
         flex-direction: column;
         max-width: 320px;
+
+        @include responsive($tablet) {
+            max-width: 575px;
+        }
 
         span{
             width: 100px;

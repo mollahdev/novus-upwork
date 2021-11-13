@@ -5,6 +5,19 @@
     background-repeat: no-repeat;
     background-position: right 162px;
 
+    @include responsive($default_width) {
+        padding: 180px 0 120px 0;
+        background-size: 500px;
+        background-position: right 64px;
+    }
+
+    
+    @include responsive($tablet) {
+        padding: 150px 0 90px 0;
+        background-size: 400px;
+        background-position: right 50px;
+    }
+
     .banner {
 
         &--subtitle {
@@ -24,6 +37,16 @@
             font-family: $primary_font;
             font-weight: 700;
             padding: 30px 0 40px 0;
+
+            @include responsive($default_width) {
+                font-size: 44px;
+                line-height: 54px;
+            }
+
+            @include responsive($tablet) {
+                font-size: 36px;
+	            line-height: 48px;
+            }
         }
 
     }

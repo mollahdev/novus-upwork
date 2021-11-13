@@ -1,5 +1,10 @@
 .cta-section {
     --cta-height: 220px;
+
+    @include responsive($tablet) {
+        --cta-height: 190px;
+    }
+
     .cta {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -12,6 +17,14 @@
         background: css_var('primary_color');
         background: linear-gradient(270deg, rgba(96, 254, 235, 0.2) 0%, rgba(96, 254, 235, 0) 100%);
         
+        @include responsive($default_width) {
+            padding: 0 10px 0 33px;
+        }
+
+        @include responsive($tablet) {
+            padding: 0 10px 0 20px;
+        }
+
         &__content {
             
             height: var(--cta-height);
@@ -31,11 +44,18 @@
                 font-style: normal;
                 font-weight: bold;
                 font-size: 28px;
+
+                @include responsive($tablet) {
+                    font-size: 24px;
+                }
             }
 
             &--description {
                 color: css_var('secondary_color');
                 line-height: 32px;
+                @include responsive($tablet) {
+                    line-height: 26px;
+                }
             }
 
             &--link {
@@ -64,6 +84,17 @@
                 transform: rotate(-15deg);
                 width: 437px;
                 margin-top: -29px;
+
+                @include responsive($default_width) {
+                    width: 268px;
+                    margin-top: 40px;
+                }
+
+                @include responsive($tablet) {
+                    width: 161px;
+                    margin-top: 78px;
+                }
+
             }
             path {
                 fill: css_var('tertiary_color');

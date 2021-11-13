@@ -1,7 +1,16 @@
 .service-section {
     padding-top: 150px;
-    
     --gap: 25px;
+    
+    @include responsive($default_width) {
+        padding-top: 120px;
+        --gap: 10px;
+    }
+
+    @include responsive($tablet) {
+        padding-top: 90px;
+    }
+    
 
     .service {
        
@@ -11,9 +20,17 @@
             grid-template-columns: 2fr 1fr;
             gap: var(--gap);
 
+            @include responsive($default_width) {
+                padding-top: 40px;
+            }
+
+            @include responsive($tablet) {
+                grid-template-columns: 1fr;
+            }
+
             .left-column {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                grid-template-columns: 1fr 1fr;
                 gap: var(--gap);
             }
 
@@ -21,6 +38,10 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: var(--gap);
+
+                @include responsive($tablet) {
+                    grid-template-columns: 1fr 1fr;
+                }
             }
         }
 
@@ -68,6 +89,7 @@
 
             &--title {
                 max-width: calc(100% - 80px);
+                
             }
 
             li {
