@@ -150,14 +150,22 @@
 
     #response {
         p {
-            background: #e9bbbb;
-            width: 55%;
-            color: red;
-            padding: 10px 15px;
-            text-align: center;
+            color: #ff4e56;
             margin-top: 30px;
-            border: 3px solid #ff9191;
             font-size: 19px;
+            display: flex;
+            gap: 10px;
+
+            span {
+                min-width: 25px;
+                height: 25px;
+                background: #ff4e56;
+                text-align: center;
+                border-radius: 50%;
+                color: #0C4766;
+                font-weight: 500;
+                font-size: 19px;
+            }
 
             @include responsive($default_width) {
                 width: 47%;
@@ -171,33 +179,32 @@
 
     .success-markup {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        max-width: 320px;
-
-        @include responsive($tablet) {
-            max-width: 575px;
-        }
+        gap: 20px;
+        background: #215270;
+        padding: 30px;
+        border-radius: 4px;
 
         span{
-            width: 100px;
-            height: 100px;
-            background: #31ac00;
-            text-align: center;
-            line-height: 100px;
-            font-size: 41px;
-            border-radius: 50%;
-            color: css_var('white_color');
+            color: css_var('primary_color');
+            svg {
+                font-size: 36px;
+            }
         }
 
         p {
-            font-size: 18px;
-            color: css_var('white_color');
-            text-align: center;
-            padding-top: 15px;
-            line-height: 28px;
+            font-size: 24px;
+            color: css_var('grey_white_color');
+            font-weight: 500;
+            line-height: 35px;
         }
+
+        small {
+            font-size: 16px;
+            color: css_var('secondary_color');
+            padding-top: 10px;
+            display: inline-block;
+        }
+
     }
 
 }

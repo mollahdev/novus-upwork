@@ -134,6 +134,19 @@ svg.svg-icon {
 	width: 16px;
 }
 
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+}
+
+.icon-check-circle {
+	width: 0.857421875em;
+}
+
 .spinner {
 	display: none;
 	position: relative;
@@ -802,6 +815,11 @@ svg.svg-icon {
 	padding: 50px 0;
 }
 
+.endorsement-section .endorsement__content .swiper:hover .swiper-button-prev,
+.endorsement-section .endorsement__content .swiper:hover .swiper-button-next {
+	opacity: 1;
+}
+
 .endorsement-section .endorsement__card {
 	position: relative;
 }
@@ -844,6 +862,12 @@ svg.svg-icon {
 
 .endorsement-section .endorsement .swiper-pagination-bullet-active {
 	opacity: 1;
+}
+
+.endorsement-section .endorsement .swiper-button-prev,
+.endorsement-section .endorsement .swiper-button-next {
+	opacity: 0;
+	transition: all linear .2s;
 }
 
 .team-section {
@@ -1053,41 +1077,52 @@ svg.svg-icon {
 }
 
 .contact-section #response p {
-	background: #e9bbbb;
-	width: 55%;
-	color: red;
-	padding: 10px 15px;
-	text-align: center;
+	color: #ff4e56;
 	margin-top: 30px;
-	border: 3px solid #ff9191;
+	font-size: 19px;
+	display: flex;
+	gap: 10px;
+}
+
+.contact-section #response p span {
+	min-width: 25px;
+	height: 25px;
+	background: #ff4e56;
+	text-align: center;
+	border-radius: 50%;
+	color: #0C4766;
+	font-weight: 500;
 	font-size: 19px;
 }
 
 .contact-section .success-markup {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	max-width: 320px;
+	gap: 20px;
+	background: #215270;
+	padding: 30px;
+	border-radius: 4px;
 }
 
 .contact-section .success-markup span {
-	width: 100px;
-	height: 100px;
-	background: #31ac00;
-	text-align: center;
-	line-height: 100px;
-	font-size: 41px;
-	border-radius: 50%;
-	color: var(--white_color);
+	color: var(--primary_color);
+}
+
+.contact-section .success-markup span svg {
+	font-size: 36px;
 }
 
 .contact-section .success-markup p {
-	font-size: 18px;
-	color: var(--white_color);
-	text-align: center;
-	padding-top: 15px;
-	line-height: 28px;
+	font-size: 24px;
+	color: var(--grey_white_color);
+	font-weight: 500;
+	line-height: 35px;
+}
+
+.contact-section .success-markup small {
+	font-size: 16px;
+	color: var(--secondary_color);
+	padding-top: 10px;
+	display: inline-block;
 }
 
 .footer-section {
@@ -1425,10 +1460,6 @@ svg.svg-icon {
 	width: 100%;
 }
 
-.contact-section .success-markup {
-	max-width: 575px;
-}
-
 }
 
 @media screen and (max-width: 575px) {
@@ -1448,6 +1479,11 @@ svg.svg-icon {
 
 .ripple_effect {
 	padding: 13px 35px;
+}
+
+.navbar-section .navbar {
+	flex-wrap: nowrap;
+	gap: 0px;
 }
 
 #responsive-main-menu-container {

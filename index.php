@@ -6,8 +6,9 @@
      */ 
     define('ABSPATH', TRUE);
     define('HOME_URL', "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] );
-    define('UPWORK_PROFILE_URL', 'https://www.upwork.com/');
-
+    define('UPWORK_PROFILE_URL', 'https://www.upwork.com/workwith/sergeybruh');
+    define('SITE_TITLE', 'Novus Cerebrum');
+    define('FAVICON', './images/favicon.png');
 
     /**
      * 

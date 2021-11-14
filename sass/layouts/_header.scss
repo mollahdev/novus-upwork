@@ -18,6 +18,11 @@
         flex-wrap: wrap;
         gap: 20px;
 
+        @include responsive( $mobile ) {
+            flex-wrap: nowrap;
+            gap: 0px;
+        }
+
         &__menu {
             @include responsive($default_width) {
                 display: none

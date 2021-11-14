@@ -17,8 +17,13 @@
         &__content {    
             .swiper  {
                 padding: 50px 0;
-            }
-    
+                &:hover {
+                    .swiper-button-prev,
+                    .swiper-button-next {
+                        opacity: 1;
+                    }
+                }
+            }    
         }
 
         &__card {
@@ -63,6 +68,13 @@
         .swiper-pagination-bullet-active {
             opacity: 1;
         }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            opacity: 0;
+            transition: all linear .2s;
+        }
+
     }
 
 }

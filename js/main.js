@@ -159,32 +159,36 @@
            }
 
            const success= () => {
+               $('.section-header--description').hide();
                form.html(
                     `<div class="success-markup">
-                        <span class="check-icon">&check;</span>
-                        <p>Your message has successfully submitted</p>
+                        <span class="check-icon"><svg class="icon icon-check-circle"><use xlink:href="#icon-check-circle"><symbol id="icon-check-circle" viewBox="0 0 24 28">
+                        <path d="M20.062 11.469c0-0.266-0.094-0.531-0.281-0.719l-1.422-1.406c-0.187-0.187-0.438-0.297-0.703-0.297s-0.516 0.109-0.703 0.297l-6.375 6.359-3.531-3.531c-0.187-0.187-0.438-0.297-0.703-0.297s-0.516 0.109-0.703 0.297l-1.422 1.406c-0.187 0.187-0.281 0.453-0.281 0.719s0.094 0.516 0.281 0.703l5.656 5.656c0.187 0.187 0.453 0.297 0.703 0.297 0.266 0 0.531-0.109 0.719-0.297l8.484-8.484c0.187-0.187 0.281-0.438 0.281-0.703zM24 14c0 6.625-5.375 12-12 12s-12-5.375-12-12 5.375-12 12-12 12 5.375 12 12z"></path>
+                        </symbol></use></svg></span>
+                        <div>
+                            <p>Your message has been sent successfully!</p>
+                            <small>You will be notified as soon as we proceed with your request</small>
+                        </div>
                     </div>`
                )
-           }
+           };
 
            const validateEmail = (emailAddress) => {
                 const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                 return re.test(String(emailAddress).toLowerCase());
             }
 
-            
-
            submit.on('click', () => {
                 const nameValue = name.val().trim();
                 const emailValue = email.val().trim();
 
                 if( nameValue.length === 0 || emailValue.length === 0 ) {
-                    error('Name or Email field is empty!');
+                    error('<span>x</span> Your email address or name is invalid');
                     return false;
                 }
 
                 if( !validateEmail(emailValue) ) {
-                    error('Please enter a valid email address');
+                    error('<span>x</span> Please enter a valid email address');
                     return false;
                 }
 
@@ -205,8 +209,7 @@
 
                     setTimeout(()=>{
                         success();
-                        console.log(response)
-                    },2000)
+                    },1000)
 
                 } )
             

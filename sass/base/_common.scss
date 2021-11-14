@@ -18,3 +18,16 @@ h3 {
 svg.svg-icon {
     width: 16px;
 }
+
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  .icon-check-circle {
+    width: 0.857421875em;
+  }
