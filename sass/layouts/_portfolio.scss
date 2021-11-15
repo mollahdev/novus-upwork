@@ -62,7 +62,9 @@
             }
 
             @include responsive($mobile) {
-                padding: 8px 12px;
+                padding: 8px 8px;
+                margin: 0px;
+                font-size: 15px;
             }
 
             &:hover,

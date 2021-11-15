@@ -465,7 +465,10 @@ svg.svg-icon {
 #responsive-main-menu-container .responsive-header .footer .col {
 	display: flex;
 	align-items: center;
-	gap: 25px;
+}
+
+#responsive-main-menu-container .responsive-header .footer .col a:first-child {
+	margin-right: 25px;
 }
 
 #responsive-main-menu-container .responsive-header .footer .col * {
@@ -480,7 +483,7 @@ svg.svg-icon {
 .banner-section {
 	--image-y: 50px;
 	--image-x: 200px;
-	padding: 250px 0 100px 0;
+	padding: 250px 0 140px 0;
 	background: url("./../images/banner-background-left.png") no-repeat calc( -0% - var(--image-x)) var(--image-y), url("./../images/banner-background.png") no-repeat calc(100% + var(--image-x)) var(--image-y);
 	background-size: 580px;
 	overflow-x: hidden;
@@ -1675,7 +1678,7 @@ svg.svg-icon {
 
 .banner-section {
 	background-size: 0 !important;
-	padding: 130px 0 50px 0;
+	padding: 120px 0 60px 0;
 	text-align: center;
 }
 
@@ -1768,7 +1771,9 @@ svg.svg-icon {
 }
 
 .portfolio-section .portfolio__nav--btn {
-	padding: 8px 12px;
+	padding: 8px 8px;
+	margin: 0px;
+	font-size: 15px;
 }
 
 .portfolio-section .portfolio__nav--btn:hover,

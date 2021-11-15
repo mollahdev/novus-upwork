@@ -196,7 +196,10 @@
             .col {
                 display: flex;
                 align-items: center;
-                gap: 25px;
+
+                a:first-child {
+                    margin-right: 25px;
+                }
     
                 * {
                     color: css_var('grey_white_color');
