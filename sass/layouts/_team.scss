@@ -24,11 +24,6 @@
 
         &__card {
             display: flex;
-            column-gap: 60px;
-
-            @include responsive($default_width) {
-                column-gap: 30px;
-            }
 
             @include responsive($mobile) {
                 background: #0d1c325e;
@@ -41,6 +36,31 @@
 
             &.space-between {
                 justify-content: space-between;
+
+                .team__card--image {
+                    margin-left: 60px;
+                    @include responsive($default_width) {
+                        margin-left: 30px;
+                    }
+
+                    @include responsive($mobile) {
+                        margin-left: 0;
+                    }
+                }
+
+            }
+
+            &:not(.space-between) {
+                .team__card--image {
+                    margin-right: 60px;
+                    @include responsive($default_width) {
+                        margin-right: 30px;
+                    }
+
+                    @include responsive($mobile) {
+                        margin-right: 0;
+                    }
+                }
             }
 
             &:not(:last-child) {
@@ -120,16 +140,18 @@
                     margin-left: -87px;
                     display: flex;
                     align-items: center;
-                    gap: 10px;
                 }
             }
 
             li {
                 display: flex;
-                column-gap: 8px;
                 flex-wrap: wrap;
                 align-items: center;
                 line-height: 30px;
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
 
                 @include responsive($mobile) {
                     background: #ffffff14;
@@ -147,17 +169,19 @@
             &--label {
                 display: flex;
                 align-items: center;
-                column-gap: 8px;
+                margin-right: 10px;
                 color: css_var('grey_white_color');
                 font-size: 16px;
                 font-weight: 500;
 
                 @include responsive($mobile) {
                     font-size: 0;
+                    margin-right: 0px;
                 }
 
                 .svg-icon {
                     width: 18px;
+                    margin-right: 10px;
                 }
             }
 

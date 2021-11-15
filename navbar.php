@@ -73,11 +73,11 @@
             </div>
         
             <div class="navbar--button">
-                <a class="secondary-btn whatsapp-btn" href="tel:+1234567989">
+                <a class="secondary-btn whatsapp-btn" target="_blank" href="<?php echo WHATSAPP_CHAT ?>">
                     <?php Icon::whatsapp() ?>
                     <span>Contact us</span>
                 </a>
-                <?php Components::Ripple_Button('On Upwork', UPWORK_PROFILE_URL, 'style-2') ?>
+                <?php Components::Ripple_Button('Book a call', TALK, 'style-2') ?>
             </div>
 
             <div class="navbar--hamburger">
@@ -101,8 +101,8 @@
             <div class="responsive-header--menu"></div>
 
             <div class="responsive-header--footer">
-                <?php Components::Ripple_Button('Book a call', '#contact', 'style-2', false) ?>
-                <a class="secondary-btn whatsapp-btn" href="tel:+1234567989">
+                <?php Components::Ripple_Button('Book a call', TALK , 'style-2', true) ?>
+                <a class="secondary-btn whatsapp-btn" target="_blank" href="<?php echo WHATSAPP_CHAT ?>">
                     <?php Icon::whatsapp() ?>
                     <span>Contact us</span>
                 </a>
@@ -111,12 +111,12 @@
             <div class="footer">
 
                 <div class="col">
-                    <a class="footer--social-profile linkedin" href="#" target="_blank"> <?php Icon::linkedin() ?> </a>
+                    <a class="footer--social-profile linkedin" href="<?php echo LINKEDIN_PROFILE_URL ?>" target="_blank"> <?php Icon::linkedin() ?> </a>
                     <a class="footer--social-profile" href="<?php echo UPWORK_PROFILE_URL ?>" target="_blank"> <?php Icon::upwork() ?> </a>
                 </div>
 
                 <div class="col">
-                    <a href="tel:+380977546123" class="footer--phone">+380977546123</a>
+                    <a href="tel:<?php echo PHONE_NUMBER ?>" class="footer--phone"><?php echo PHONE_NUMBER ?></a>
                 </div>
 
                 <div class="col">

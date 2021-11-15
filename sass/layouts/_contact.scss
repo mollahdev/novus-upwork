@@ -54,11 +54,12 @@
     .row {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: var(--gap);
+        column-gap: var(--gap);
 
         @include responsive($mobile) {
             grid-template-columns: 1fr;
         }
+
     }
 
     #contact-form {
@@ -66,7 +67,6 @@
         flex-direction: column;
         width: 55%;
         padding-top: 40px;
-        gap: var(--gap);
 
         @include responsive($default_width) {
             width: 47%;
@@ -89,6 +89,7 @@
             border: 1px solid transparent;
             transition: border .2s;
             width: 100%;
+            margin-bottom: var(--gap);
             
             &::placeholder {
                 color: css_var('grey_white_color');
@@ -119,7 +120,7 @@
             font-weight: 500;
             font-family: $secondary_font;
             transition: all linear .2s;
-            margin-top: 30px;
+            margin-top: 25px;
             position: relative;
             user-select: none;
 
@@ -154,7 +155,6 @@
             margin-top: 30px;
             font-size: 19px;
             display: flex;
-            gap: 10px;
 
             span {
                 min-width: 25px;
@@ -165,6 +165,7 @@
                 color: #0C4766;
                 font-weight: 500;
                 font-size: 19px;
+                margin-right: 10px;
             }
 
             @include responsive($default_width) {
@@ -179,13 +180,13 @@
 
     .success-markup {
         display: flex;
-        gap: 20px;
         background: #215270;
         padding: 30px;
         border-radius: 4px;
 
         span{
             color: css_var('primary_color');
+            margin-right: 20px;
             svg {
                 font-size: 36px;
             }

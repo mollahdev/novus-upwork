@@ -51,6 +51,9 @@
             }
 
             &.linkedin {    
+
+                margin-right: 16px;
+
                 path:first-child {
                     fill: css_var('white_color');
                 }
@@ -70,7 +73,6 @@
         .col {
             display: flex;
             align-items: center;
-            gap: 15px;
 
             @include responsive($mobile) {
                 display: unset;

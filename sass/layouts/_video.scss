@@ -1,0 +1,67 @@
+.video-section {
+    position: relative;
+
+    .video-iframe {
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+        height: 556px;
+        width: 989px;
+	    margin: 0 auto;
+
+        @include responsive($default_width) {
+            height: 403px;
+	        width: 714px;
+        }
+
+        @include responsive($tablet) {
+            height: 303px;
+	        width: 540px;
+        }
+
+        @include responsive($mobile) {
+            width: auto;
+	        height: 52.5vw;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+
+            .html5-video-container {
+                transform: scale(1.05);
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding-left: 3px;
+            border: 0;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: css_var('deep_blue_color');
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all linear .2s;
+
+            &:hover {
+                background-color: #164e80
+            }
+        }
+
+    }
+
+}
+ 

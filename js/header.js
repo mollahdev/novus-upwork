@@ -50,6 +50,7 @@ jQuery( function( $) {
 
                 if( screenWidth > 1080 && !_self.mainMenu.children().length ) {
                     _self.mainMenu.html(_self.menu)
+                    $('body').removeAttr('style');
                     $('.responsive-menu-container').remove()
                     $('#responsive-main-menu-container').fadeOut()
                 }
@@ -92,7 +93,7 @@ jQuery( function( $) {
                 })
                 // close drwaer
                 closeBtn.on('click', () => {
-                    $('body').css({overflow: 'unset'})
+                    $('body').removeAttr('style');
                     tabletMenu.animate({ 'top': '100px', 'opacity': '0' }, 300, () => wrapper.fadeOut(300));
                 })
             }

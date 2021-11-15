@@ -115,7 +115,6 @@
             margin-top: 50px;
             display: flex;
             justify-content: start;
-            gap: 16px;
             align-items: center;
 
             @include responsive($mobile) {
@@ -128,6 +127,12 @@
 
             .secondary-btn {
                 padding: 11px 20px;
+                margin-left: 16px;
+
+                @include responsive($mobile) {
+                    margin-left: 0;
+                    margin-top: 16px;
+                }
             }
         }
 
@@ -137,7 +142,6 @@
             flex-wrap: wrap;
             margin-top: 40px;
             justify-content: flex-start;
-            gap: 21px;
 
             @include responsive($mobile) {
                 flex-direction: column;
@@ -146,6 +150,18 @@
                 &--copyright {
                     font-size: 14px !important;
                     color: css_var('secondary_color') !important;
+                }
+            }
+
+            .col {
+                padding: 0 15px;
+
+                @include responsive($tablet){
+                    padding: 15px 15px;
+                }
+
+                @include responsive($mobile){
+                    padding: 10px 0px;
                 }
             }
 

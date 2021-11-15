@@ -32,7 +32,6 @@
         ul {
             display: flex;
             justify-content: center;
-            gap: 5px;
             
             @include responsive($mobile) {
                 border: 1px solid css_var('primary_color');
@@ -52,6 +51,15 @@
             cursor: pointer;
             transition: all linear .2s;
             user-select: none;
+            margin: 0 3px;
+            
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
 
             @include responsive($mobile) {
                 padding: 8px 12px;
@@ -101,7 +109,7 @@
 
     .portfolio__card {
         position: relative;
-        overflow: clip;
+        overflow: hidden;
         border-radius: 8px;
 
         @include responsive($tablet) {

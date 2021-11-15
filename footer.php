@@ -13,12 +13,12 @@
                     <img src="./images/logo.svg" alt="main logo">
                 </a>
 
-                <a class="footer--social-profile linkedin" href="#" target="_blank"> <?php Icon::linkedin() ?> </a>
-                <a class="footer--social-profile" href="#" target="_blank"> <?php Icon::upwork() ?> </a>
+                <a class="footer--social-profile linkedin" href="<?php echo LINKEDIN_PROFILE_URL ?>" target="_blank"> <?php Icon::linkedin() ?> </a>
+                <a class="footer--social-profile" href="<?php echo UPWORK_PROFILE_URL ?>" target="_blank"> <?php Icon::upwork() ?> </a>
 
             </div>
             <div class="col">
-                <a href="tel:+380977546123" class="footer--phone">+380977546123</a>
+                <a href="tel:<?php echo PHONE_NUMBER ?>" class="footer--phone"><?php echo PHONE_NUMBER ?></a>
             </div>
             <div class="col">
                 <span class="footer--copyright"> 

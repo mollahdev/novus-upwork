@@ -1,7 +1,6 @@
 .secondary-btn {
     display: flex;
     align-items: center;
-    gap: 8px;
     border: 1px solid css_var('white_color');
     border-radius: 4px;
     padding: 9px 20px;
@@ -9,6 +8,7 @@
     span {
         color: css_var('white_color');
         font-size: 15px;
+        margin-left: 8px;
     }
 
     &:hover {

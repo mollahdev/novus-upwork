@@ -17,6 +17,25 @@
      */ 
 
      $.fn.extend({
+         /**
+         * 
+         * 
+         * Banner Video load
+         *  
+         */
+
+        bannerVideo: function( $scope ) {
+            const play_btn  = $scope.find('.video-play-button');
+            const video_id  = play_btn.data('id');
+
+            play_btn.on('click', ev => {
+                ev.preventDefault();
+                if (video_id) {
+                    $scope.html('<iframe src="https://www.youtube.com/embed/' + video_id + '?autoplay=1&loop=1&controls=0" rel="0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                }
+            })
+        },
+
         /**
          * 
          * 
@@ -231,6 +250,12 @@
      * 
      */ 
     $( document ).ready( function () {
+        /**
+         * 
+         * Initalize Banner video script 
+         * 
+         */ 
+        $.fn.bannerVideo($('.video-iframe'));
         
         /**
          * 

@@ -14,13 +14,13 @@
         'solution_2' => [
             'icon'          => 'Icon::shield',
             'title'         => 'Issue preventing QA',
-            'description'   => 'Find functional/performance/security isuues before your users find theme preventing QA' 
+            'description'   => 'Find functional/performance/ security isuues before your users find theme preventing QA' 
         ],
 
         'solution_3' => [
             'icon'          => 'Icon::user_plus',
             'title'         => 'Increase Retention',
-            'description'   => "Find functional/performance/security isuues before your users find theme preventing QA" 
+            'description'   => "Find functional/performance/ security isuues before your users find theme preventing QA" 
         ],
 
         'solution_4' => [

@@ -1,9 +1,16 @@
 .cta-section {
     --cta-height: 220px;
+    padding-top: 150px;
+
+    @include responsive($default_width) {
+        padding-top: 120px;
+    }
 
     @include responsive($tablet) {
         --cta-height: 190px;
+        padding-top: 90px;
     }
+
 
     .cta {
         display: grid;
@@ -13,7 +20,7 @@
         border-radius: 8px;
         padding: 0 10px 0 60px;
         height: var(--cta-height);
-        overflow: clip;
+        overflow: hidden;
         background: css_var('primary_color');
         background: linear-gradient(270deg, rgba(96, 254, 235, 0.2) 0%, rgba(96, 254, 235, 0) 100%);
         position: relative;
