@@ -285,7 +285,7 @@ svg.svg-icon {
 }
 
 .navbar-section {
-	background: #0d1c327d;
+	background: #0d1c32bd;
 	padding: 18px 0;
 	position: fixed;
 	width: 100%;
@@ -484,7 +484,7 @@ svg.svg-icon {
 	--image-y: 50px;
 	--image-x: 200px;
 	padding: 250px 0 140px 0;
-	background: url("./../images/banner-background-left.png") no-repeat calc( -0% - var(--image-x)) var(--image-y), url("./../images/banner-background.png") no-repeat calc(100% + var(--image-x)) var(--image-y);
+	background: url("./../images/banner-background-left.png") no-repeat -200px 50px, url("./../images/banner-background.png") no-repeat calc(100% + 200px) 50px;
 	background-size: 580px;
 	overflow-x: hidden;
 }
@@ -1132,7 +1132,20 @@ svg.svg-icon {
 	border: 1px solid transparent;
 	transition: border .2s;
 	width: 100%;
-	margin-bottom: var(--gap);
+	margin-bottom: var(--gap); /* Chrome, Safari, Edge, Opera */ /* Firefox */
+}
+
+.contact-section #contact-form input::-webkit-outer-spin-button,
+.contact-section #contact-form input::-webkit-inner-spin-button,
+.contact-section #contact-form textarea::-webkit-outer-spin-button,
+.contact-section #contact-form textarea::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.contact-section #contact-form input[type=number],
+.contact-section #contact-form textarea[type=number] {
+	-moz-appearance: textfield;
 }
 
 .contact-section #contact-form input::placeholder,

@@ -4,8 +4,8 @@
 
     padding: 250px 0 140px 0;
     background: 
-        use_image('banner-background-left.png')  no-repeat calc( -0% - var(--image-x) ) var(--image-y), 
-        use_image('banner-background.png')  no-repeat calc(100% + var(--image-x)) var(--image-y);
+        use_image('banner-background-left.png')  no-repeat -200px 50px, 
+        use_image('banner-background.png')  no-repeat calc(100% + 200px) 50px;
     background-size: 580px;
     overflow-x: hidden;
 

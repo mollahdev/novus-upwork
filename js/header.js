@@ -26,6 +26,7 @@ jQuery( function( $) {
             _self.novus_nav_markup();
             _self.novus_menu_toggle();
             _self.novus_dropdown_toggle();
+            _self.screenWidth = window.innerWidth;
         },
 
 
@@ -36,37 +37,24 @@ jQuery( function( $) {
          */
 
         novus_nav_markup: function() {
+            
+            $( window ).resize(function() {
+                _self.screenWidth = window.innerWidth;
 
-             // check screen size 
-            const resizeObserver = new ResizeObserver( entries => {
-
-                const config = entries[0]
-                const screenWidth = Math.ceil(config.contentRect.width);
-
-                if( screenWidth <= 1080 && !_self.tabletMenu.children().length) {
+                if( _self.screenWidth <= 1080 && !_self.tabletMenu.children().length) {
                     _self.tabletMenu.html(_self.markup)
                     $('.responsive-menu-container').html(_self.menu)
                 }
 
-                if( screenWidth > 1080 && !_self.mainMenu.children().length ) {
+                if( _self.screenWidth > 1080 && !_self.mainMenu.children().length ) {
                     _self.mainMenu.html(_self.menu)
                     $('body').removeAttr('style');
                     $('.responsive-menu-container').remove()
                     $('#responsive-main-menu-container').fadeOut()
                 }
 
-            }) 
+            });
 
-            if( _self.header.length ) {
-                const navbar = _self.header.find('.navbar__menu');
-                if( navbar.children().length > 0 ) {
-                    resizeObserver.observe(_self.header[0]) // run when header markup is found
-                } else {
-                    _self.header.find('.navbar--hamburger').css({
-                        'display': 'none',
-                    })
-                }
-            }
         },
 
 
