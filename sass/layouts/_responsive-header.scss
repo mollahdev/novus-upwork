@@ -145,7 +145,6 @@
 
             @include responsive($mobile) {
                 flex-direction: column;
-                margin-top: 60px;
 
                 &--copyright {
                     font-size: 14px !important;
@@ -196,10 +195,6 @@
             .col {
                 display: flex;
                 align-items: center;
-
-                a:first-child {
-                    margin-right: 25px;
-                }
     
                 * {
                     color: css_var('grey_white_color');

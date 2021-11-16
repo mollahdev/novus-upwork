@@ -21,21 +21,6 @@
                         <h2 class="team__card--name">Marian Kushnir</h2>
                         <p class="team__card--designation">Novus Cerebrum, CEO</p>
                         <p class="team__card--description">Maryan is rehabilitated ActionScript developer from Lviv, Ukraine; now building SPAs and SaaS products.</p>
-
-                        <ul class="team__card--contact-list">
-                            <li>
-                                <label class="team__card--label"> <?php Icon::skype() ?> Skype</label>
-                                <span class="team__card--profile">ryanchenkie.com</span>
-                            </li>
-                            <li>
-                                <label class="team__card--label"><?php Icon::linkedin() ?> LinkedIn</label>
-                                <a class="team__card--profile" href="#">ryanchenkie.com</a>
-                            </li>
-                            <li>
-                                <label class="team__card--label"><?php Icon::gmail() ?> Corporate email</label>
-                                <a class="team__card--profile" href="mailto:example@gmail.com">ryanchenkie.com</a>
-                            </li>
-                        </ul>
                     </div>
 
                     <div class="team__card--image">
@@ -54,21 +39,6 @@
                         <h2 class="team__card--name">Sergey Brukh</h2>
                         <p class="team__card--designation">Novus Cerebrum, Team lead</p>
                         <p class="team__card--description">Sergey has 5 years of experience in the IT industry, including Management, QA, Front-End, WordPress.</p>
-
-                        <ul class="team__card--contact-list">
-                            <li>
-                                <label class="team__card--label"><?php Icon::skype() ?> Skype</label>
-                                <span class="team__card--profile">ryanchenkie.com</span>
-                            </li>
-                            <li>
-                                <label class="team__card--label"><?php Icon::linkedin() ?> LinkedIn</label>
-                                <a class="team__card--profile" href="#">ryanchenkie.com</a>
-                            </li>
-                            <li>
-                                <label class="team__card--label"><?php Icon::gmail() ?> Corporate email</label>
-                                <a class="team__card--profile" href="mailto:example@gmail.com">ryanchenkie.com</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
 
@@ -78,21 +48,6 @@
                         <h2 class="team__card--name">Sasha Shaforost</h2>
                         <p class="team__card--designation">Novus Cerebrum</p>
                         <p class="team__card--description">Maryan is rehabilitated ActionScript developer from Lviv, Ukraine; now building SPAs and SaaS products.</p>
-
-                        <ul class="team__card--contact-list">
-                            <li>
-                                <label class="team__card--label"> <?php Icon::skype() ?> Skype</label>
-                                <span class="team__card--profile">ryanchenkie.com</span>
-                            </li>
-                            <li>
-                                <label class="team__card--label"><?php Icon::linkedin() ?> LinkedIn</label>
-                                <a class="team__card--profile" href="#">ryanchenkie.com</a>
-                            </li>
-                            <li>
-                                <label class="team__card--label"><?php Icon::gmail() ?> Corporate email</label>
-                                <a class="team__card--profile" href="mailto:example@gmail.com">ryanchenkie.com</a>
-                            </li>
-                        </ul>
                     </div>
 
                     <div class="team__card--image">

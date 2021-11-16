@@ -24,7 +24,8 @@
 
         &__card {
             display: flex;
-
+            align-items: center;
+            
             @include responsive($mobile) {
                 background: #0d1c325e;
                 column-gap: 15px;
@@ -32,6 +33,7 @@
                 border-radius: 4px;
                 display: grid;
                 grid-template-columns: 72px 1fr;
+                align-items: start;
             }
 
             &.space-between {

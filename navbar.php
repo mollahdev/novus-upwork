@@ -73,11 +73,7 @@
             </div>
         
             <div class="navbar--button">
-                <a class="secondary-btn whatsapp-btn" target="_blank" href="<?php echo WHATSAPP_CHAT ?>">
-                    <?php Icon::whatsapp() ?>
-                    <span>Contact us</span>
-                </a>
-                <?php Components::Ripple_Button('Book a call', TALK, 'style-2') ?>
+                <?php Components::Ripple_Button('On Upwork', UPWORK_PROFILE_URL, 'style-1') ?>
             </div>
 
             <div class="navbar--hamburger">
@@ -101,22 +97,13 @@
             <div class="responsive-header--menu"></div>
 
             <div class="responsive-header--footer">
-                <?php Components::Ripple_Button('Book a call', TALK , 'style-2', true) ?>
-                <a class="secondary-btn whatsapp-btn" target="_blank" href="<?php echo WHATSAPP_CHAT ?>">
-                    <?php Icon::whatsapp() ?>
-                    <span>Contact us</span>
-                </a>
+                <?php Components::Ripple_Button('On Upwork', UPWORK_PROFILE_URL , 'style-1', true) ?>
             </div>
 
             <div class="footer">
 
                 <div class="col">
-                    <a class="footer--social-profile linkedin" href="<?php echo LINKEDIN_PROFILE_URL ?>" target="_blank"> <?php Icon::linkedin() ?> </a>
                     <a class="footer--social-profile" href="<?php echo UPWORK_PROFILE_URL ?>" target="_blank"> <?php Icon::upwork() ?> </a>
-                </div>
-
-                <div class="col">
-                    <a href="tel:<?php echo PHONE_NUMBER ?>" class="footer--phone"><?php echo PHONE_NUMBER ?></a>
                 </div>
 
                 <div class="col">

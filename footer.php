@@ -13,13 +13,11 @@
                     <img src="./images/logo.svg" alt="main logo">
                 </a>
 
-                <a class="footer--social-profile linkedin" href="<?php echo LINKEDIN_PROFILE_URL ?>" target="_blank"> <?php Icon::linkedin() ?> </a>
                 <a class="footer--social-profile" href="<?php echo UPWORK_PROFILE_URL ?>" target="_blank"> <?php Icon::upwork() ?> </a>
 
             </div>
-            <div class="col">
-                <a href="tel:<?php echo PHONE_NUMBER ?>" class="footer--phone"><?php echo PHONE_NUMBER ?></a>
-            </div>
+            
+
             <div class="col">
                 <span class="footer--copyright"> 
                     &copy; <?php echo date("Y"); ?> Novus Cerebrum. All Rights Reserved
