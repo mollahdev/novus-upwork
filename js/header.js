@@ -26,7 +26,6 @@ jQuery( function( $) {
             _self.novus_nav_markup();
             _self.novus_menu_toggle();
             _self.novus_dropdown_toggle();
-            _self.screenWidth = window.innerWidth;
         },
 
 
@@ -36,25 +35,25 @@ jQuery( function( $) {
          * --------------------------------
          */
 
+        resizeObserver: function(screen) {
+            if( screen <= 1080 && !_self.tabletMenu.children().length) {
+                _self.tabletMenu.html(_self.markup)
+                $('.responsive-menu-container').html(_self.menu)
+            }
+
+            if( screen > 1080 && !_self.mainMenu.children().length ) {
+                _self.mainMenu.html(_self.menu)
+                $('body').removeAttr('style');
+                $('.responsive-menu-container').remove()
+                $('#responsive-main-menu-container').fadeOut()
+            }
+        },
+
         novus_nav_markup: function() {
-            
+            _self.resizeObserver(window.innerWidth);
             $( window ).resize(function() {
-                _self.screenWidth = window.innerWidth;
-
-                if( _self.screenWidth <= 1080 && !_self.tabletMenu.children().length) {
-                    _self.tabletMenu.html(_self.markup)
-                    $('.responsive-menu-container').html(_self.menu)
-                }
-
-                if( _self.screenWidth > 1080 && !_self.mainMenu.children().length ) {
-                    _self.mainMenu.html(_self.menu)
-                    $('body').removeAttr('style');
-                    $('.responsive-menu-container').remove()
-                    $('#responsive-main-menu-container').fadeOut()
-                }
-
+                _self.resizeObserver(window.innerWidth);
             });
-
         },
 
 
